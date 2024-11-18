@@ -13,9 +13,7 @@ Este projeto é um bot do Telegram para gerenciar inadimplentes, desenvolvido em
 - Python 3.8 ou superior
 - Bibliotecas necessárias listadas no arquivo `requirements.txt`
 - Um bot Telegram configurado (obtenha o token pelo BotFather)
-- Um arquivo `.env` configurado com as seguintes variáveis:
-  - `TELEGRAM_BOT_TOKEN`: Token do bot Telegram.
-  - `TELEGRAM_USER_ID`: ID do Telegram do usuário autorizado.
+- Docker instalado para executar a aplicação com variáveis de ambiente configuradas.
 
 ## Instalação
 
