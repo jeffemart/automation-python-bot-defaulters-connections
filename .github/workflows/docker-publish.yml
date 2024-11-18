@@ -38,5 +38,5 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/python-bot-routine-defaulters-connections:$GITHUB_SHA
+        docker push ${{ secrets.DOCKER_USERNAME }}/python-bot-defaulters-connections:$GITHUB_SHA
         docker push ${{ secrets.DOCKER_USERNAME }}/python-bot-defaulters-connections:latest
