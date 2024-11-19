@@ -15,20 +15,6 @@ logger = configure_logger()
 def make_request(username, ip_comunicacao):
     url = "https://api.junior.online.dev.br/verificar"
     headers = {
-        "authority": "junior.online.dev.br",
-        "accept": "application/json, text/plain, */*",
-        "accept-language": "pt-BR,pt;q=0.9",
-        "cache-control": "no-cache",
-        "cookie": "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6IjlNV1hlTVNRVnByNXU1Q3ZOb09DOEE9PSIsInZhbHVlIjoiTlp1M0pMOWFtMStEMzNVOGU2MkZFRzhneG10bHZWaWsxbzN2cnprS2t6VG1BOVlzYTdteU9OZERzNFAxc0tha2tybGtkS3dId2xJc2M2VG5mWXNsUzhzYzE1SE9qTFMxTnQxbnZVdkg2SUR0TERCY3Z1RnBCeTBPNHIzZ1dEWHZHR2t1amt3eWtBYzc1OCszWWJVTWNmUnE4SDZhVHlRU3J2bmMzMmRRRFEwcTBzZGR4WHZ0amdhYmgzak5zRmJYak4xb0I2UEI4aHZ3M1RrcXBJcFJVbExmaVR1QkZOVVFXd2ttU083YVZ6UT0iLCJtYWMiOiIyM2UxYjE4Yzk5ZTE0N2NmMDZiNDdhM2NhMzIwZmU4N2RlYTdjYzY5ZDIwMjk4ZjdkYzFkNDI4NDVmNzA4NDM5IiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6IjdwNE45UFE4TVA1V0c4d0ZqM2Q2MFE9PSIsInZhbHVlIjoiYlVBcVRoS3E1bng2N2p6cHo3eWVtOURDNlF5eUdLMkR2bWhNUGZzd1hQZWxNSEk2eXZjck5Na0N0akJmSFB1V2VQcnZaR1pheTVYd0JzRm41bkI4TCtpRnlkMzF6bzdQV3gyUkZCK1pOU0dDd0RsMTNBQ3BpVUtvSVIyTEl2NWEiLCJtYWMiOiI1MTJjY2U1N2ZiNmQ1OWVkZDMwNmNiMzk0OTZhM2QyY2RjZjU4OWJhZTRmMzA3NmNhZDNkZWRhM2ZhYzM4YjRiIiwidGFnIjoiIn0%3D; junior_session=eyJpdiI6IitZaUR3WE5VTGRHNzZCVlV4d0JBZmc9PSIsInZhbHVlIjoiNTcvajVWQU5HQkFjVFNxL2c2U1l1UW0xK3BuaTgrVWE2UWlleG8vMmxuZUczdjZxSG0zZlJPT0tyZ3RqL3orZ3NWa3kvdHB3OU50ZXArcHVzSTEyckhrSm1PU1lPR0t1QVFpWGtCaVdmY21kTWJlU3l6cDIwYjFQa2dtQlQ4R1YiLCJtYWMiOiI5M2ZlYzhjN2EzNjY0ZmVmYjk0MzFiNWIyNzRlODE2MjY5MTcyZThhZTkzYmE4NTg3MzhjODdmMWJmODFjMzVkIiwidGFnIjoiIn0%3D",
-        "pragma": "no-cache",
-        "referer": "https://junior.online.dev.br/home",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-origin",
-        "sec-gpc": "1",
-        "token": os.getenv("JUNIOR_API_TOKEN"),
-        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36",
-        "x-xsrf-token": os.getenv("JUNIOR_XSRF_TOKEN"),
         "Content-Type": "application/json",
         "Authorization": f"Bearer {os.getenv('JUNIOR_AUTH_TOKEN')}",
     }
