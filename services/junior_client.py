@@ -25,7 +25,7 @@ def make_request(username, ip_comunicacao):
         response.raise_for_status()  # Levanta um erro se o status for 4xx ou 5xx
         return response.json()  # Retorna a resposta como JSON
     except requests.exceptions.HTTPError as errh:
-        logger.error(f"Erro HTTP para o username '{username}': {errh}")
+        logger.debug(f"Erro HTTP para o username '{username}': {errh}")
         return {}
     except requests.exceptions.RequestException as err:
         logger.error(f"Erro na requisição para o username '{username}': {err}")
